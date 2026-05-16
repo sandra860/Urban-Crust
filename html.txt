@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Crust | Sánguiches & Street Food</title>
+    <!-- Google Fonts -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #ff6b00;
+            --dark: #121212;
+            --light: #ffffff;
+            --gray: #1f1f1f;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://unsplash.com');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 5px solid var(--primary);
+        }
+
+        h1 { font-family: 'Bebas Neue', cursive; font-size: 5rem; color: var(--primary); letter-spacing: 2px; }
+        p.subtitle { font-size: 1.2rem; margin-top: -10px; opacity: 0.8; }
+
+        .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
+
+        h2 { 
+            font-family: 'Bebas Neue', cursive; 
+            font-size: 3rem; 
+            margin: 40px 0 20px; 
+            border-left: 5px solid var(--primary); 
+            padding-left: 15px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--gray);
+            border-radius: 15px;
+            padding: 20px;
+            transition: transform 0.3s;
+            border: 1px solid #333;
+        }
+
+        .card:hover { transform: translateY(-5px); border-color: var(--primary); }
+
+        .card h3 { color: var(--primary); margin-bottom: 10px; }
+        .price { font-weight: bold; font-size: 1.2rem; display: block; margin-top: 10px; color: #00ff88; }
+
+        .tag {
+            background: #333;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+        }
+
+        .btn-wsap {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25d366;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 100;
+        }
+
+        footer { text-align: center; padding: 40px; color: #555; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>URBAN CRUST</h1>
+        <p class="subtitle">Sánguiches chilenos con toque urbano</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- SECCIÓN SÁNDWICHES -->
+        <h2>Sánguiches</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Churrasco Italiano</h3>
+                <p>Palta hass, tomate fresco y mayo casera.</p>
+                <span class="price">$5.500</span>
+            </div>
+            <div class="card">
+                <h3>Chacarero</h3>
+                <p>Laminas de vacuno, porotos verdes, ají verde y tomate.</p>
+                <span class="price">$5.800</span>
+            </div>
+            <div class="card">
+                <h3>Hamburguesa Queso</h3>
+                <p>180g de carne, queso fundido en pan brioche.</p>
+                <span class="price">$4.900</span>
+            </div>
+        </div>
+
+        <!-- SECCIÓN COMPLETOS -->
+        <h2>Completos</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Completo Italiano</h3>
+                <p>Salchicha premium, palta, tomate y mayo.</p>
+                <span class="price">$2.500</span>
+            </div>
+            <div class="card">
+                <h3>Completo Especial</h3>
+                <p>Palta y mayo o Tomate y mayo.</p>
+                <span class="price">$2.100</span>
+            </div>
+            <div class="card">
+                <h3>Papas Fritas XL</h3>
+                <p>Crocantes y en su punto de sal.</p>
+                <span class="price">$3.500</span>
+            </div>
+        </div>
+
+        <!-- SECCIÓN BEBIDAS -->
+        <h2>Bebidas & Energéticas</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Gaseosas</h3>
+                <p>Coca Cola (Lata / 1.5L), Sprite 2.5L.</p>
+                <span class="tag">Lata</span> <span class="tag">Familiar</span>
+            </div>
+            <div class="card">
+                <h3>Energéticas</h3>
+                <p>Score, Monster (Mango Loco), Redbull.</p>
+                <span class="price">$1.500 - $2.500</span>
+            </div>
+        </div>
+
+    </div>
+
+    <a href="https://wa.me" class="btn-wsap">🛒 Pedir por WhatsApp</a>
+
+    <footer>
+        &copy; 2024 Urban Crust Chile. Diseñado para portafolio.
+    </footer>
+
+</body>
+</html>
